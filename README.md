@@ -1,4 +1,4 @@
-# **Lihavoitu otsikko**
+# **D&D Hex-grid maptool**
 
 ## väliotsikko
 
