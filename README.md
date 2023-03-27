@@ -12,4 +12,4 @@ tekstiä jossa *kursiivi*
 
 [vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[tyoaikakirjanpito.txt](linkki)
+[tyoaikakirjanpito.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.txt)
