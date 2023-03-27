@@ -25,5 +25,5 @@ classDiagram
 	class Pelinappula{
 		+Pelaaja.id omistaja
 	}
-	class Noppa
-		+
+	class Noppa{
+	}
