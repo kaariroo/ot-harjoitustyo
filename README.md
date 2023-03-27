@@ -11,3 +11,5 @@ tekstiä jossa *kursiivi*
 [gitlog.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/laskarit/gitlog.txt)
 
 [vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[tyoaikakirjanpito.txt](linkki)
