@@ -6,8 +6,8 @@
 
 tekstiä jossa *kursiivi*
 
-[komentorivi.txt](komentorivi.txt)
+[komentorivi.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
 
-[gitlog.txt](gitlog.txt)
+[gitlog.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/laskarit/gitlog.txt)
 
-[vaatimusmaarittely.md](vaatimusmaarittely.md)
+[vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
