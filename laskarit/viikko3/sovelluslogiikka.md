@@ -20,7 +20,7 @@ classDiagram
 	class Pelilauta{
 		+Int pelinappulat(2-8)
 		+List ruudut(40)
-
+	}
 	class Ruutu{
 		+Int id
 		+String nimi
