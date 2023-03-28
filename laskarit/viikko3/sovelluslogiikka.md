@@ -49,6 +49,7 @@ classDiagram
 		+Id 30
 		+Vankila
 		+jumissa(heittaa parin)
+	}
 
 	class Pelaaja{
 		+Int id(1-8)
