@@ -2,9 +2,9 @@
 sequenceDiagram
 	participant Main
 	participant kone
-	participant FuelTank
-	participant Engine
+	participant tankki
+	participant moottori
 	Main->>kone: Machine()
-	kone->>FuelTank()
-	kone->>FuelTank.fill(40)
-	kone->>Engine(tank)
+	kone->>tankki: Fueltank()
+	kone->>tankki: FuelTank.fill(40)
+	kone->>moottori: Engine(tank)
