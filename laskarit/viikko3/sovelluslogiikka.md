@@ -3,7 +3,7 @@
 classDiagram
 
 	Pelilauta -- Ruutu
-	Ruutu -- Peilnappula
+	Ruutu .. Pelinappula
 	Pelaaja .. Noppa
 	Noppa .. Pelinappula
 	Pelaaja -- Pelinappula
@@ -12,11 +12,12 @@ classDiagram
 	class Pelaaja{
 		+Int id
 		+String nimi
-		+heittaa(Noppa)
+		+heittaa(Noppa.tulos)
 		+siirtaa(Pelinappula)
 	}
 	
-	class Pelilauta
+	class Pelilauta{
+		+List ruudut(40)
 
 	class Ruutu{
 		+Int id
@@ -24,6 +25,8 @@ classDiagram
 	}
 	class Pelinappula{
 		+Pelaaja.id omistaja
+		+liikkuu()
 	}
 	class Noppa{
+		+Int tulos
 	}
