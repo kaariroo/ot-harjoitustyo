@@ -12,7 +12,7 @@ classDiagram
 	class Pelaaja{
 		+Int id
 		+String nimi
-		+heittaa(Noppa.tulos)
+		+heittaa(Noppa)
 		+siirtaa(Pelinappula)
 	}
 	
