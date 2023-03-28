@@ -7,4 +7,4 @@ sequenceDiagram
 	Main->>kone: Machine()
 	kone->>tankki: Fueltank()
 	kone->>tankki: FuelTank.fill(40)
-	kone->>moottori: Engine(tank)
+	kone->>moottori: Engine(tankki)
