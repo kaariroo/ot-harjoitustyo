@@ -9,5 +9,5 @@ sequenceDiagram
 	kone->>tankki: Fueltank()
 	kone->>tankki: FuelTank.fill(40)
 	kone->>moottori: Engine(tankki)
-	kone->>Main: k
+	kone->>Main:  
 	deactivate kone
