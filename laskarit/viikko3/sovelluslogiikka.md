@@ -17,7 +17,7 @@ classDiagram
 	Ruutu <|-- Asematjalaitokset
 
 	class Asematjalaitokset{
-		+Int id
+		+Int id1
 		+String nimi
 		+String omistaja
 	}
