@@ -18,7 +18,7 @@ classDiagram
 	
 	class Pelilauta{
 		+List ruudut(40)
-
+	}
 	class Ruutu{
 		+Int id
 		+String nimi
