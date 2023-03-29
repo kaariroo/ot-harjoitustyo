@@ -25,8 +25,8 @@ sequenceDiagram
 	main->>rautatietori: lataa_arvoa(kallen_kortti, 3)
 	rautatietori activate
 	rautatietori->>kallen_kortti: kasvata_arvoa(3)
-	kallen_kortti activate
 	rautatietori deactivate
+	kallen_kortti activate
 	kallen_kortti->>kallen_kortti: kallen_kortti.arvo = 3
 	kallen_kortti deactivate
 
