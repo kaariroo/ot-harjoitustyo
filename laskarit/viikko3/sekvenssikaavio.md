@@ -15,10 +15,18 @@ sequenceDiagram
 	Main->>kone: kone.drive()
 	activate kone
 	kone->>moottori: kone._engine.start()
+	activat moottori
 	moottori->>tankki: kone._fuel_tank.consume(5)
+	deactivate moottori
 	tankki->>tankki: kone._fuel_contents = 35
 	kone->>moottori: kone._engine.is_running()
+	activate moottori
 	moottori->>kone: True
+	deactivate moottori
 	kone->>moottori: kone._engine.use_energy()
+	activate moottori
 	moottori->>tankki: kone._fuel_tank.consume(10)
+	deactivate moottori
 	tankki->>tankki: kone._fuel_contents = 25
+	kone-->>Main:
+	deactivate kone
