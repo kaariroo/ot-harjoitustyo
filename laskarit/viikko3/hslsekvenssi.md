@@ -39,7 +39,7 @@ sequenceDiagram
 	kallen_kortti->>kallen_kortti: kallen_kortti.arvo = 1.5
 	deactivate kallen_kortti
 	ratikka6->>main: True
-	deactivate deactivate
+	deactivate ratikka6
 
 	main->>bussi244: osta_lippu(kallen_kortti, 2)
 	activate bussi244
