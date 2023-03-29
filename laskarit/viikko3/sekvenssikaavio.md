@@ -1,14 +1,14 @@
 ```mermaid
 sequenceDiagram
 	participant Main
-	participant kone
-	participant tankki
-	participant moottori
 	Main->>kone: Machine()
+	participant kone
 	activate kone
 	kone->>tankki: kone._tank=Fueltank()
+	participant tankki
 	kone->>tankki: kone._tank.fill(40)
 	kone->>moottori: kone._engine=Engine(kone._tank)
+	participant moottori
 	kone-->>Main:  
 	deactivate kone
 	
