@@ -28,5 +28,5 @@ sequenceDiagram
 	moottori->>tankki: kone._fuel_tank.consume(10)
 	deactivate moottori
 	tankki->>tankki: kone._fuel_contents = 25
-	kone-->>Main:
+	kone-->>Main: 
 	deactivate kone
