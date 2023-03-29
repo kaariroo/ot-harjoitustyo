@@ -29,5 +29,5 @@ sequenceDiagram
         kallen_kortti->>kallen_kortti: kallen_kortti.arvo = 1.5
 	ratikka6->>main: True	
 
-	main->>bussi244_ osta_lippu(kallen_kortti, 2)
+	main->>bussi244: osta_lippu(kallen_kortti, 2)
 	bussi244->>main: False
