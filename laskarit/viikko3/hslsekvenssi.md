@@ -36,7 +36,7 @@ sequenceDiagram
 	kallen_kortti activate
 	kallen_kortti->>ratikka6: 3
 	ratikka6->>kallen_kortti: vahenna_arvoa(1.5)
-        kallen_kortti->>kallen_kortti: kallen_kortti.arvo = 1.5
+	kallen_kortti->>kallen_kortti: kallen_kortti.arvo = 1.5
 	kallen_kortti deactivate
 	ratikka6->>main: True
 	ratikka6 deactivate	
