@@ -1,2 +1,5 @@
 27.3.	1h	Tutustuminen pygamen dokumentaatioon
-	
+28.3	2h	Tutustuminen Tk inkeriin ja graafisen käyttöliittymän luominen
+29.3	1h	Tk inkerin hylkääminen ja pygameen siirtyminen
+30.3	2h	Kuusikulmion ja niistä tehdyn ruudukon piirtämisen keksimistä
+3.4	4h	Kuusikulmiokartan vääntämistä
