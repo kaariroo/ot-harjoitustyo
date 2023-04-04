@@ -1,6 +1,8 @@
 # **D&D Hex-grid maptool**
 
-## väliotsikko
+## Toiminta nyt - ja tulevaisuudessa
+
+Suorittaessa komennon "poetry run invoke start" sovellus aukeaa ja pohjaksi määritellylle kuvalle piirtyy kuusikulmioverkosto, joka muodostuu kuusikulmio olioista. - Seuraavaksi ohjelman pitäisi tunnistaa, mitä olentoa klikataan hiirellä ja avata sitä olentoa vastaava jonkinlainen muistiinpanotyökalu, johoin voisi kirjoittaa muistiinpanoja. Myöhemmin ohjelma pitäisi opettaa tallentamaan nämä muistiinpanot niin että ne toimivat vielä seuraavallakin ohjelman käyttökerralla. 
 
 ### Dokumentaatio
 
