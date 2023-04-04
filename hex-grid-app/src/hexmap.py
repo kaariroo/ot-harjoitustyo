@@ -16,7 +16,6 @@ class Hexmap():
 		hex_column = 0
 		hex_row = 0
 		for i in self.hexlist:
-			print("first", i.x, i.y)
 			if hex_column % 2 == 0:
 				i.x += 1.5 * hex_column * i.radius
 				i.y += hex_row * (1.75 * i.radius)
@@ -28,5 +27,5 @@ class Hexmap():
 			if hex_row >= 20:
 				hex_column += 1
 				hex_row = 0
-			print(i.x, i.y)
+
 
