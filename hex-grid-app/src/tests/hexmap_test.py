@@ -8,7 +8,5 @@ class Testhexmap(unittest.TestCase):
 		self.hexmap = Hexmap(600, 30, [])
 		
 	def test_hexlistassa_on_n_oliota(self):
-		
-		
 		self.assertEqual(len(self.hexmap.hexlist), 600)
 		
