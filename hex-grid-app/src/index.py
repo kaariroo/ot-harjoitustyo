@@ -18,7 +18,7 @@ def main():
 	
 	event_queue = EventQueue()
 	clock = Clock()
-	main_loop = MainLoop(hexmap, clock, win, event_queue, bg)
+	main_loop = MainLoop(hexmap, clock, event_queue, win, bg)
 	
 	pygame.init()
 	main_loop.start()

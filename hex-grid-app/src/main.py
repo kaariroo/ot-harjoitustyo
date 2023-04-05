@@ -15,10 +15,10 @@ class MainLoop:
 			hex.draw(self.win)
 		pygame.display.update()
 	
-	def _handle_events(self):
+	def handle_events(self):
 		for event in self.event_queue.get():
 			if event.type == pygame.MOUSEBUTTONDOWN:
-				clicked = hexmap.find_hex(event.pos[0], event.pos[1])
+				clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
 				clicked.color = (0, 0, 255)
 			elif event.type == pygame.QUIT:
                 		return False
@@ -26,7 +26,7 @@ class MainLoop:
 	def start(self):
 		
 		while True:
-			if self._handle_events() == False:
+			if self.handle_events() == False:
 				break
 		
 			self.clock.tick(20)
