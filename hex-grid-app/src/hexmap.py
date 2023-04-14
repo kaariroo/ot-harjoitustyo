@@ -4,14 +4,14 @@ from hexagon import Hexagon
 
 
 class Hexmap():
-    def __init__(self, n, size, hexlist):
-        self.n = n
+    def __init__(self, amount, size, hexlist):
+        self.amount = amount
         self.size = size
         self.hexlist = hexlist
         self.make_hexmap()
 
     def make_hexmap(self):
-        for _ in range(self.n):
+        for _ in range(self.amount):
             self.hexlist.append(Hexagon((255, 255, 255), 6, 31, 31, 31, 1))
 
 # muuttaa hexojen paikat kohdilleen, hexat vähän vituillaan

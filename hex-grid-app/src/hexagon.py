@@ -1,5 +1,6 @@
-import pygame
 import math
+import pygame
+
 
 
 class Hexagon():
@@ -16,5 +17,4 @@ class Hexagon():
         n = self.vertex_count
         x = self.x
         y = self.y
-        pygame.draw.polygon(win, self.color, [(
-            x + r * math.cos(2 * math.pi * i / n), y + r * math.sin(2 * math.pi * i / n))for i in range(n)], self.width)
+        pygame.draw.polygon(win, self.color, [(x + r * math.cos(2 * math.pi * i / n), y + r * math.sin(2 * math.pi * i / n))for i in range(n)], self.width)
