@@ -1,4 +1,5 @@
 ```mermaid classDiagram
+
 Mainloop -- Hexmap
 Hexmap -- Hexagon
 
@@ -8,7 +9,7 @@ class Hexagon{
 }
 
 class Hexmap{
-    +make_hexmap(tekee listan hexoista ja asettaa ne paikoilleen)
+    +make_hexmap(tekee listan hexoista ja asettaa nepaikoilleen)
     +find_hex(click_x, click_y)
 }
 
