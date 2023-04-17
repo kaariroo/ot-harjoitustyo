@@ -25,7 +25,7 @@ joka tulee kartan pohjaksi. Tämän jälkeen tulee ruutu, johon syötetään "he
 
 ### Muokkausnäkymä
 
-Täällä voi muokata projektia joko klikkaamalla hexaa, jolloin pääsee kirjoittamaan siitä hexasta muistiinpanoja, tai liikuttamalla hexaruudukkoa kuvan päällä (jos tarvetta saada hexat johonkin 
+Täällä voi muokata projektia joko klikkaamalla hexaa(TEHTY), jolloin pääsee kirjoittamaan siitä hexasta muistiinpanoja, tai liikuttamalla hexaruudukkoa kuvan päällä (jos tarvetta saada hexat johonkin 
 tiettyihin kohtiin.
 
 ### Jatkokehitysideoita
