@@ -3,7 +3,6 @@
 Mainloop -- Hexmap
 Hexmap -- Hexagon
 
-
 class Hexagon{
     +draw(self)
 }
