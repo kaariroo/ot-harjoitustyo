@@ -1,4 +1,5 @@
-```mermaid classDiagram
+```mermaid
+classDiagram
 
 Mainloop -- Hexmap
 Hexmap -- Hexagon
