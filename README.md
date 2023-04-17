@@ -11,3 +11,5 @@ Suorittaessa komennon "poetry run invoke start" sovellus aukeaa ja pohjaksi m√§√
 [tyoaikakirjanpito.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.txt)
 
 [changelog.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/changelog.md)
+
+[arkkitehtuuri.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/arkkitehtuuri.md)
