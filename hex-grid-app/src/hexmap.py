@@ -1,4 +1,3 @@
-import pygame
 import math
 from hexagon import Hexagon
 
@@ -19,21 +18,21 @@ class Hexmap():
         hex_row = 0
         for i in self.hexlist:
             if hex_column % 2 == 0:
-                i.x += 1.5 * hex_column * i.radius
-                i.y += hex_row * (1.75 * i.radius)
+                i.center_x += 1.5 * hex_column * i.radius
+                i.center_y += hex_row * (1.75 * i.radius)
 
             if hex_column % 2 != 0:
-                i.x += 1.5 * hex_column * i.radius
-                i.y += hex_row * (1.75 * i.radius) + (0.9 * i.radius)
+                i.center_x += 1.5 * hex_column * i.radius
+                i.center_y += hex_row * (1.75 * i.radius) + (0.9 * i.radius)
             hex_row += 1
             if hex_row >= 20:
                 hex_column += 1
                 hex_row = 0
 
-    def find_hex(self, x, y):
+    def find_hex(self, click_x, click_y):
         result = self.hexlist[0]
-        for hex in self.hexlist:
-            hex.distance = math.sqrt((abs(hex.x - x))**2 + (abs(hex.y - y))**2)
+        for hexa in self.hexlist:
+            hexa.distance = math.sqrt((abs(hex.x - click_x))**2 + (abs(hex.y - click_y))**2)
             if hex.distance < result.distance:
-                result = hex
+                result = hexa
         return result
