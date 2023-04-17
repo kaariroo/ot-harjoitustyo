@@ -23,6 +23,9 @@ class MainLoop:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
+                #notes = Note(clicked)
+                #notes.write
+                #testi, jolla näkyy että kartassa tapahtuu jotain kun tiettyä hexaa painaa, eli hexa vaihtaa väriä
                 clicked.color = (0, 0, 255)
                 return True
             

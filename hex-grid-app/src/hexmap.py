@@ -32,7 +32,7 @@ class Hexmap():
     def find_hex(self, click_x, click_y):
         result = self.hexlist[0]
         for hexa in self.hexlist:
-            hexa.distance = math.sqrt((abs(hex.x - click_x))**2 + (abs(hex.y - click_y))**2)
-            if hex.distance < result.distance:
+            hexa.distance = math.sqrt((abs(hexa.center_x - click_x))**2 + (abs(hexa.center_y - click_y))**2)
+            if hexa.distance < result.distance:
                 result = hexa
         return result
