@@ -1,10 +1,10 @@
-27.3.	  1h	  Tutustuminen pygamen dokumentaatioon
-28.3.	  2h	  Tutustuminen Tk inkeriin ja graafisen käyttöliittymän luominen
-29.3.	  1h	  Tk inkerin hylkääminen ja pygameen siirtyminen
-30.3.	  2h	  Kuusikulmion ja niistä tehdyn ruudukon piirtämisen keksimistä
-03.4.	  4h	  Kuusikulmiokartan vääntämistä
-04.4.   4h    Koodin siistiminen omiin tiedostoihin ja luokkiin yhdestä spagettikasasta
-05.4.   4h    Kuusikulmio olioiden klikkauksen toteuttaminen
-17.4.   4h    Koodin siistiminen pylintin mukaan
-18.4.   4h    Hexan klikkaamiseen liittyvää somistelua ja pohja tekstitiedoston luomiselle klikatessa
+27.3.	1h	Tutustuminen pygamen dokumentaatioon
+28.3.	2h	Tutustuminen Tk inkeriin ja graafisen käyttöliittymän luominen
+29.3.	1h	Tk inkerin hylkääminen ja pygameen siirtyminen
+30.3.	2h	Kuusikulmion ja niistä tehdyn ruudukon piirtämisen keksimistä
+03.4.	4h	Kuusikulmiokartan vääntämistä
+04.4.	4h	Koodin siistiminen omiin tiedostoihin ja luokkiin yhdestä spagettikasasta
+05.4.	4h	Kuusikulmio olioiden klikkauksen toteuttaminen
+17.4.	4h	Koodin siistiminen pylintin mukaan
+18.4.	4h	Hexan klikkaamiseen liittyvää somistelua ja pohja tekstitiedoston luomiselle klikatessa
 Yht =   26h
