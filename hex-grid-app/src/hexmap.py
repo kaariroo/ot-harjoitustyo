@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 from hexagon import Hexagon
 
 
@@ -11,7 +11,7 @@ class Hexmap():
 
     def make_hexmap(self):
         for _ in range(self.amount):
-            self.hexlist.append(Hexagon((255, 255, 255), 6, 31, 31, 31, 1))
+            self.hexlist.append(Hexagon((255, 255, 255, 255), 6, 31, 31, 31, 1))
 
 # muuttaa hexojen paikat kohdilleen, hexat vähän vituillaan
         hex_column = 0
@@ -32,7 +32,7 @@ class Hexmap():
     def find_hex(self, click_x, click_y):
         result = self.hexlist[0]
         for hexa in self.hexlist:
-            hexa.distance = math.sqrt((abs(hexa.center_x - click_x))**2 + (abs(hexa.center_y - click_y))**2)
+            hexa.distance=sqrt((abs(hexa.center_x-click_x))**2+(abs(hexa.center_y-click_y))**2)
             if hexa.distance < result.distance:
                 result = hexa
         return result

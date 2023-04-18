@@ -1,5 +1,6 @@
 import sys
 import pygame
+from notes import Note
 
 
 
@@ -21,17 +22,26 @@ class MainLoop:
         for event in self.event_queue.get():
             if event.type == pygame.QUIT:
                 return False
+            if event.type == pygame.MOUSEMOTION:
+                aimedhex = self.hexmap.find_hex(event.pos[0], event.pos[1])
+                aimedhex.color = (250, 235, 215, 255)
+                aimedhex.width = 4
+                for hexa in self.hexmap.hexlist:
+                    if hexa != aimedhex:
+                        hexa.color = (250, 235, 215, 255)
+                        hexa.width = 1
             if event.type == pygame.MOUSEBUTTONDOWN:
                 clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
-                #notes = Note(clicked)
-                #notes.write
-                #testi, jolla näkyy että kartassa tapahtuu jotain kun tiettyä hexaa painaa, eli hexa vaihtaa väriä
-                clicked.color = (0, 0, 255)
+                clicked.color = (250, 235, 215, 255)
+                clicked.width = 6
+            if event.type == pygame.MOUSEBUTTONUP:
+                clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
+                clicked.color = (250, 235, 215, 255)
+                notes = Note(clicked)
+                notes.write(self.hexmap.hexlist.index(clicked))
+                clicked.width = 1
                 return True
-            
-
     def start(self):
-
         while True:
             if self.handle_events() is False:
                 sys.exit()
@@ -39,53 +49,3 @@ class MainLoop:
             self.clock.tick(20)
 
             self.redraw_game_window()
-
-        
-
-# clock = pygame.time.Clock()
-
-
-# piirtää kartan alle ja laittaa hexat paikoilleen
-# def redraw_game_window():
-#    win.blit(bg, (0, 0))
-#    for hex in hex_list:
-#        hex.draw()
-#    pygame.display.update()
-
-# laittaa hexat listaan
-# nämä Hexmap luokassa
-# hex_list = []
-# for _ in range(600):
-# size = 31
-# hex_list.append(Hexagon(win, (255, 255, 255), 6, size, size, size, 1))
-
-# muuttaa hexojen paikat kohdilleen, hexat vähän vituillaan
-# hex_column = 0
-# hex_row = 0
-# for i in hex_list:
-#    if hex_column % 2 == 0:
-#        i.x += 1.5 * hex_column * i.radius
-#        i.y += hex_row * (1.75 * i.radius)
-#
-#    if hex_column % 2 != 0:
-#        i.x += 1.5 * hex_column * i.radius
-#        i.y += hex_row * (1.75 * i.radius) + (0.9 * i.radius)
-#    hex_row += 1
-#
-#    if hex_row >= 20:
-#        hex_column += 1
-#        hex_row = 0
-
-
-# run = True
-# while run:
-#    clock.tick(27)
-#
-#    for event in pygame.event.get():
-#        if event.type == pygame.QUIT:
-#            run = False
-
-
-#    redraw_game_window()
-
-# pygame.quit
