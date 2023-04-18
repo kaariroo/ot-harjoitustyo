@@ -3,6 +3,8 @@ classDiagram
 
 Mainloop -- Hexmap
 Hexmap -- Hexagon
+Mainloop -- Note
+Note -- Hexagon
 
 class Hexagon{
     +draw(self)
@@ -17,4 +19,9 @@ class Mainloop{
     +redraw gamewindow()
     +handle_events()
     +start()
+}
+
+class Note{
+    +hexagon
+    +write(avaa .txt tiedoston, johon voi kirjoittaa)
 }
