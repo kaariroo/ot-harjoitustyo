@@ -27,3 +27,10 @@ class Note{
 }
 
 
+```mermaid
+
+sequenceDiagram
+participant Mainloop
+participant Hexagon
+participant Hexmap
+Mainloop->>Hexmap: redraw gamewindow
