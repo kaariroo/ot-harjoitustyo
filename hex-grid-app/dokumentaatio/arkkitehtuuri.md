@@ -25,3 +25,13 @@ class Note{
     +hexagon
     +write(avaa .txt tiedoston, johon voi kirjoittaa)
 }
+
+
+sequenceDiagram
+
+participant Mainloop
+participant Hexagon
+participant Hexmap
+
+Mainloop->>Hexmap: redraw gamewindow
+Hexmap->>Hexagon: hexmap.hexlist.append(n)
