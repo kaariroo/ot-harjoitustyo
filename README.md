@@ -17,3 +17,5 @@ Ohjelma käynnistyy antamalla
 [changelog.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/changelog.md)
 
 [arkkitehtuuri.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/arkkitehtuuri.md)
+
+[release](https://github.com/kaariroo/ot-harjoitustyo/releases)
