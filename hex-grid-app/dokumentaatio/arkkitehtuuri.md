@@ -27,8 +27,3 @@ class Note{
 }
 
 
-sequenceDiagram
-participant Mainloop
-participant Hexagon
-participant Hexmap
-Mainloop->>Hexmap: redraw gamewindow
