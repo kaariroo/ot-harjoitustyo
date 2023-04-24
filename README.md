@@ -2,7 +2,11 @@
 
 ## Toiminta nyt - ja tulevaisuudessa
 
-Suorittaessa komennon "poetry run invoke start" sovellus aukeaa ja pohjaksi määritellylle kuvalle piirtyy kuusikulmioverkosto, joka muodostuu kuusikulmio olioista. Ohjelma tunnistaa, mitä olentoa klikataan hiirellä. --- Seuraavaksi ohjelman pitäisi avata sitä olentoa vastaava jonkinlainen muistiinpanotyökalu, johoin voisi kirjoittaa muistiinpanoja. Myöhemmin ohjelma pitäisi opettaa tallentamaan nämä muistiinpanot niin että ne toimivat vielä seuraavallakin ohjelman käyttökerralla. 
+Suorittaessa komennon "poetry run invoke start" sovellus aukeaa ja pohjaksi määritellylle kuvalle piirtyy kuusikulmioverkosto, joka muodostuu kuusikulmio olioista. Ohjelma tunnistaa, mitä olentoa klikataan hiirellä. Ohjelman avaa sitä hexaolentoa vastaava tekstitiedoston geditissä, johoin voi kirjoittaa muistiinpanoja. hex grid map kansiossa komento: "poetry run invoke start"
+
+### Ohjelman käynnistys
+
+Ohjelma käynnistyy antamalla 
 
 ### Dokumentaatio
 
