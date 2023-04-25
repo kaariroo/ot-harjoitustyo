@@ -5,3 +5,7 @@
 ## Viikko 4
 
 - Sama + hiirtä liikuttaessa hexgridillä, hiireen osuva hexa korostuu ja sitä klikatessa korostuu lisää ja aukeaa tekstieditori, johon tehdä muistiinpanoja siitä hexasta. Tallentuu tässä vaiheessa projektin juureen.
+
+## Viikko 5
+
+- Dokumentti tallentuu omaan kansioon.
