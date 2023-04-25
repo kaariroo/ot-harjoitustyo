@@ -7,8 +7,11 @@ Suorittaessa komennon "poetry run invoke start" sovellus aukeaa ja pohjaksi mä�
 ### Ohjelman käynnistys
 
 Ohjelma käynnistyy antamalla hex grid map kansiossa komento: "poetry run invoke start"
+
 Testit komennolla "poetry run invoke test
+
 Testikattavuusraportti komennolla "poetry run invoke coverage"
+
 Pylint tarkistus komennolla "poetry run invoke lint"
 
 
