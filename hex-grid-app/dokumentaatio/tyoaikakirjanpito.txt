@@ -7,7 +7,7 @@
 05.4.	4h	Kuusikulmio olioiden klikkauksen toteuttaminen
 17.4.	4h	Koodin siistiminen pylintin mukaan
 18.4.	4h	Hexan klikkaamiseen liittyvää somistelua ja pohja tekstitiedoston luomiselle klikatessa
-20.4. 2h  Tekstitiedostot tallentuvat omaan kansioon
-24.4  2h  Testien kirjoittamista
-25.4  2h  Testien pähkäilyä
+20.4.	2h	Tekstitiedostot tallentuvat omaan kansioon
+24.4	2h	Testien kirjoittamista
+25.4	2h	Testien pähkäilyä
 Yht =   32h
