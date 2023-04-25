@@ -28,31 +28,20 @@ class Note{
 
 ```
 ```mermaid
-classDiagram
+sequenceDiagram
 
-Mainloop -- Hexmap
-Hexmap -- Hexagon
-Mainloop -- Note
-Note -- Hexagon
+participant Main
+participant MainLoop
+participant Hexmap
+participant Hexagon
+participant Note
 
-class Hexagon{
-    +draw(self)
-}
+Main->>Hexmap: make n size hexmap
+Hexmap->>Hexagon: hexmap.hexlist.append(n x hexagon)
+Hexagon->>Hexmap: n x Hexagons
+Hexmap->>Main: hexmap
+Main->>MainLoop: hexmap, clock, event_queue, win, picture
 
-class Hexmap{
-    +make_hexmap(tekee listan hexoista ja asettaa nepaikoilleen)
-    +find_hex(click_x, click_y)
-}
-
-class Mainloop{
-    +redraw gamewindow()
-    +handle_events()
-    +start()
-}
-
-class Note{
-    +hexagon
-    +write(avaa .txt tiedoston, johon voi kirjoittaa)
-}
-
-```
+Main->>MainLoop: start
+MainLoop->>Hexagon:for i in hexmap.hexlist -> draw
+Hexagon->>MainLoop: 
