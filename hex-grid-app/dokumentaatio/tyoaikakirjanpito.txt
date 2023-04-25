@@ -8,4 +8,6 @@
 17.4.	4h	Koodin siistiminen pylintin mukaan
 18.4.	4h	Hexan klikkaamiseen liittyvää somistelua ja pohja tekstitiedoston luomiselle klikatessa
 20.4. 2h  Tekstitiedostot tallentuvat omaan kansioon
-Yht =   28h
+24.4  2h  Testien kirjoittamista
+25.4  2h  Testien pähkäilyä
+Yht =   32h
