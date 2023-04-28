@@ -11,7 +11,7 @@ class Hexmap():
 
     def make_hexmap(self):
         for _ in range(self.amount):
-            self.hexlist.append(Hexagon((255, 255, 255, 255), 6, 31, 31, 31, 1))
+            self.hexlist.append(Hexagon((255, 255, 255, 255), 6, 93, 90, 90, 1))
 
 # muuttaa hexojen paikat kohdilleen, hexat vähän vituillaan
         hex_column = 0
@@ -25,7 +25,7 @@ class Hexmap():
                 i.center_x += 1.5 * hex_column * i.radius
                 i.center_y += hex_row * (1.75 * i.radius) + (0.9 * i.radius)
             hex_row += 1
-            if hex_row >= 20:
+            if hex_row >= 8:
                 hex_column += 1
                 hex_row = 0
 

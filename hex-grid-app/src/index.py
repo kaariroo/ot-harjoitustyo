@@ -6,11 +6,11 @@ from eventqueue import EventQueue
 
 
 def main():
-    win = pygame.display.set_mode((1126, 926))
+    win = pygame.display.set_mode((1313, 1080))
     picture = pygame.image.load('dndmap.jpg')
-    picture = pygame.transform.scale(picture, (1126, 926))
+    picture = pygame.transform.scale(picture, (1313, 1080))
     size = 31
-    hexmap = Hexmap(600, size, [])
+    hexmap = Hexmap(80, size, [])
 
     pygame.display.set_caption("hexmaptool")
 
