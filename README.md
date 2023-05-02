@@ -17,7 +17,7 @@ Pylint tarkistus komennolla "poetry run invoke lint"
 
 ### Dokumentaatio
 
-[vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/vaatimusmaarittely.md)
 
 [tyoaikakirjanpito.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.txt)
 
