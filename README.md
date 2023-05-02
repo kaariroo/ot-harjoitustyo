@@ -19,7 +19,7 @@ Pylint tarkistus komennolla "poetry run invoke lint"
 
 [vaatimusmaarittely.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/vaatimusmaarittely.md)
 
-[tyoaikakirjanpito.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.txt)
+[tyoaikakirjanpito.txt](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/tyoaikakirjanpito.txt)
 
 [changelog.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/changelog.md)
 
