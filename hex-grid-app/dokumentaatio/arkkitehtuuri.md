@@ -1,3 +1,15 @@
+Arkkitehtuurikuvaus:
+
+Ohjelmassa Pääluokat ovat Mainloop, Hexmap, Hexagon ja Note.
+
+Hexagon luokka määrittelee ja piirtää kartassa tarvittavat kuusikulmiot.
+
+Hexmap luo näistä kuusikulmio olioista ruudukon ja vastaa siitä että on tiedossa, mitä ruutua hiirellä osoitetaan tai klikataan.
+
+Note luokka vastaa muistiinpanojen kirjoittamisesta kutakin ruutua vastaavaan tiedostoon.
+
+Mainloop vastaa ohjelman pääsilmukan toiminnasta, tapahtumien käsittelystä  ja ruudun päivittämisestä.
+
 ```mermaid
 classDiagram
 
@@ -27,6 +39,15 @@ class Note{
 }
 
 ```
+## Toiminta
+
+Main komentaa Hexmappia tekemään tietyn kokoisen hexmapin. 
+
+Hexmap lisää listaan n Hexagon oliota.
+
+Main luo MainLoop olion joka startatessaan pyytää Hexagoneja piirtymään omille paikoilleen peli-ikkunan päälle.
+
+
 ```mermaid
 sequenceDiagram
 
