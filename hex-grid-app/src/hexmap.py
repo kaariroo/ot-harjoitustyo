@@ -3,17 +3,26 @@ from hexagon import Hexagon
 
 
 class Hexmap():
-    def __init__(self, amount, size, hexlist):
+
+    """Kuusikulmioista ruudukon muodostava luokka"""
+    def __init__(self, amount, hexlist):
+
+        """Luokan konstruktori joka luo uuden ruudukon. Kutsuu make_hexmap funktiota.
+        Args:
+            amount: ruutujen määrä
+            hexlist: tyhjä lista"""
         self.amount = amount
-        self.size = size
         self.hexlist = hexlist
         self.make_hexmap()
 
     def make_hexmap(self):
+
+        """Lisää hexlistiin kostruktorissa olevan määrän hexagon olioita, 
+        jonka jälkeen sijoittaa ne paikoilleen ruudukkoon
+        melko tyydyttävän tiheäksi ruudukoksi."""
+
         for _ in range(self.amount):
             self.hexlist.append(Hexagon((255, 255, 255, 255), 6, 93, 90, 90, 1))
-
-# muuttaa hexojen paikat kohdilleen, hexat vähän vituillaan
         hex_column = 0
         hex_row = 0
         for i in self.hexlist:
@@ -30,6 +39,9 @@ class Hexmap():
                 hex_row = 0
 
     def find_hex(self, click_x, click_y):
+
+        """Etsii minkä ruudun kohdalla hiiri kulloinkin on."""
+
         result = self.hexlist[0]
         for hexa in self.hexlist:
             hexa.distance=sqrt((abs(hexa.center_x-click_x))**2+(abs(hexa.center_y-click_y))**2)

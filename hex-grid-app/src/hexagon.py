@@ -3,7 +3,20 @@ import pygame
 
 
 class Hexagon():
+
+    """Yksittäisen kuusikulmion luomisesta vastaava luokka"""
+
     def __init__(self, color, vertex_count, radius, center_x, center_y, width):
+
+        """Luokan konstrukstori joka luo uuden kuusikulmion.
+        
+        Args:
+            color: väri
+            vertex_count: kulmien määrä
+            radius: säde
+            center_x: keskustan x koordinaatti
+            center_y: keskustan y koordinaatti
+            width: reunan paksuus"""
         self.color = color
         self.vertex_count = vertex_count
         self.radius = radius
@@ -12,6 +25,10 @@ class Hexagon():
         self.width = width
 
     def draw(self, win):
+
+        """Kuusikulmion piirtävä metodi. Saa argumentin win, eli ohjelman ikkunan. 
+        h_p laskee kulmien paikat ja käyttää pygamen draw.polygon funktiota."""
+
         r_a = self.radius
         v_n = self.vertex_count
         d_x = self.center_x

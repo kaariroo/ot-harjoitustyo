@@ -9,8 +9,7 @@ def main():
     win = pygame.display.set_mode((1313, 1080))
     picture = pygame.image.load('dndmap.jpg')
     picture = pygame.transform.scale(picture, (1313, 1080))
-    size = 31
-    hexmap = Hexmap(80, size, [])
+    hexmap = Hexmap(80, [])
 
     pygame.display.set_caption("hexmaptool")
 
@@ -20,7 +19,6 @@ def main():
 
     pygame.init()
     main_loop.start()
-
 
 if __name__ == "__main__":
     main()
