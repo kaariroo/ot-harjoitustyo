@@ -28,3 +28,5 @@ Pylint tarkistus komennolla "poetry run invoke lint"
 [arkkitehtuuri.md](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/arkkitehtuuri.md)
 
 [release](https://github.com/kaariroo/ot-harjoitustyo/releases)
+
+[käyttöohje](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/kaytto-ohje.md)
