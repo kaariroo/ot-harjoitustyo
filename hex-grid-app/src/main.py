@@ -19,6 +19,7 @@ class MainLoop:
         self.win.blit(self.picture, (0, 0))
         for i in self.hexmap.hexlist:
             i.draw(self.win)
+        self.statblocks.draw(self.win)
         pygame.display.update()
 
     def handle_events(self):
@@ -49,9 +50,10 @@ class MainLoop:
             if event.type == pygame.MOUSEBUTTONUP and event.button == RIGHT:
                 clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
                 clicked.color = (250, 235, 215, 255)
-                self.statblock = Statblock(0, 0, clicked, "wolf")
-                self.statblocks.add(statblock)
-                self.statblocks.draw(self.win)
+                self.statblock = Statblock((0,0), clicked, "wolf")
+                self.statblocks.add(self.statblock)
+               
+                    
     def start(self):
         while True:
             if self.handle_events() is False:
