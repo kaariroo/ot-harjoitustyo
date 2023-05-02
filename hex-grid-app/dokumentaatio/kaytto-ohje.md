@@ -1,4 +1,21 @@
-#Käyttöohje
+# Ennen ohjelman käynnistämistä, asenna riippuvuudet komennolla:
+
+```bash
+poetry install
+```
+
+Jonka jälkeen suorita alustustoimenpiteet komennolla:
+
+```bash
+poetry run invoke build
+```
+
+Nyt ohjelman voi käynnistää komennolla:
+
+```
+poetry run invoke start
+```
+Käyttöohje
 
 Lataa projektin viimeisimmän [releasen](https://github.com/kaariroo/ot-harjoitustyo/releases/tag/viikko_5) lähdekoodi valitsemalla _Assets_-osion alta _Source code_.
 
