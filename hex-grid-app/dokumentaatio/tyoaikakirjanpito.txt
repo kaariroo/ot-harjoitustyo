@@ -14,4 +14,4 @@
 27.4.	3h	Testien kirjoittamista
 02.5.	3h	Sprite luokan pähkäilyä ihan sairaan kauan koska ennen inittiä puuttui toinen alaviiva
 
-Yht =   36h
+Yht =   39h
