@@ -9,3 +9,7 @@
 ## Viikko 5
 
 - Dokumentti tallentuu omaan kansioon.
+
+## Viikko 6
+
+- Oikealla klikkaamalla ruudulle ilmestyy statblock luokan olio. Jatkossa siitä pitää myös päästä eroon ja keksiä keino tallentaa jokaiselle hexalle omat statblockit

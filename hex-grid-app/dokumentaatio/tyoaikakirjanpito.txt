@@ -12,5 +12,6 @@
 25.4.	2h	Testien pähkäilyä
 26.4.	1h	Testien pähkäilyä
 27.4.	3h	Testien kirjoittamista
+02.5.	3h	Sprite luokan pähkäilyä ihan sairaan kauan koska ennen inittiä puuttui toinen alaviiva
 
 Yht =   36h
