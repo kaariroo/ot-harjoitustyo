@@ -36,8 +36,7 @@ class Testmainloop(unittest.TestCase):
         picture = pygame.image.load('dndmap.jpg')
         picture = pygame.transform.scale(picture, (1126, 926))
        
-        size = 31
-        hexmap = Hexmap(600, size, [])
+        hexmap = Hexmap(600, [])
         clock = Clock()
         
 

@@ -9,7 +9,7 @@ from eventqueue import EventQueue
 
 class Testhexmap(unittest.TestCase):
     def setUp(self):
-        self.hexmap = Hexmap(600, 30, [])
+        self.hexmap = Hexmap(600, [])
 
     def test_hexlistassa_on_n_oliota(self):
         self.assertEqual(len(self.hexmap.hexlist), 600)
@@ -18,3 +18,5 @@ class Testhexmap(unittest.TestCase):
         hexa = self.hexmap.find_hex(15, 15)
 
         self.assertEqual(hexa, self.hexmap.hexlist[0])
+
+    
