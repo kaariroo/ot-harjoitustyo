@@ -21,7 +21,8 @@ Hiiren vasemmalla painikkeella karttaa painettaessa aukeaa klikattua hexaa
 vastaava tekstitiedosto. sinne voi kirjoittaa muistiinpanoja kartan siitä
 hexasta. Tallenna muistiinpano "save" nappulalla.
 
-Hiiren oikealla painikkeella painettaessa aukeaa suden statblokki. 
-Tavoitteena on että jokaiselle hexalle voisi määritellä mitä statblokkeja
-niihin aukeaa ja ne esim. suurentuisivat kun hiiren vie niiden päälle, mikä 
-helpottaisi lukemista ja ne saisi tietty suljettuakin.
+Hiiren oikealla painikkeella painettaessa aukeaa oikealle ylös valikko, josta voi valita, mitä statblokkeja
+hexaan haluaa. Kun valikosta klikkaa hiiren vasemmalla painikkeella, ilmestyy kyseinen statblokki ikkunaan ja 
+tallentuu csv tiedostoon. Valikko ja statblokit sulkeutuvat klikkaamalla samaa hexaa uudestaan oikealla painikkeella
+tai valikon otsikkoa "monsters" hiiren vasemmalla painikkeella.
+
