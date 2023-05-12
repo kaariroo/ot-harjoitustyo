@@ -13,3 +13,7 @@
 ## Viikko 6
 
 - Oikealla klikkaamalla ruudulle ilmestyy statblock luokan olio. Jatkossa siitä pitää myös päästä eroon ja keksiä keino tallentaa jokaiselle hexalle omat statblockit
+
+## Viikot 7 ja 8
+
+- Kun hexaa klikkaa oikealla, ilmestyy valikko, josta voi lisätä hexaan statblokkeja, jotka tulevat heti näkyviin. Ne tallentuvat csv tiedostoon ja psyyvät tallessa. Statblokit ja valikko poistuvat joko samaa hexaa uudestaan oikealla klikkaamalla tai painamalla vasemmalla painikkeella valikon otsikkoa.
