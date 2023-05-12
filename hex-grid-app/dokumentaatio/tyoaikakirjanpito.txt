@@ -13,5 +13,8 @@
 26.4.	1h	Testien pähkäilyä
 27.4.	3h	Testien kirjoittamista
 02.5.	3h	Sprite luokan pähkäilyä ihan sairaan kauan koska ennen inittiä puuttui toinen alaviiva
+09.5.	3h	Statblokkien vääntämistä
+11.5.	5h	Statblokkien vääntämistä kohdilleen ja kunkin hexan statblokkien tallennuksesta vataavan luokan tekemistä
+12.5.	4h	Testien vääntämistä ja sovelluksen yleistä siistimistä
 
-Yht =   39h
+Yht =   51h
