@@ -23,6 +23,8 @@ class Hexagon():
         self.center_x = center_x
         self.center_y = center_y
         self.width = width
+        self.statblocks = pygame.sprite.Group()
+        self.active = False
 
     def draw(self, win):
 
