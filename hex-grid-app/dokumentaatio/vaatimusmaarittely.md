@@ -11,24 +11,17 @@ olevaan karttaan haluaakin tehdä muutoksia.
 
 Sovelluksella on alkuun vain yksi käyttäjärooli eli _normaali käyttäjä_. 
 
-## Käyttöliittymäideoinita
+## Käyttöliittymä
 
-Sovelluksen auetessa käyttäjälle aukeaa ikkuna jossa on mahdollista ladata aiempi kartta, tai aloittaa uuden luominen. Uutta luomaan ryhtyessa aukeaa painike, josta voi ladata sovellukseen kuvan, 
-(joka tulee ns. "kartaksi" pohjalle) ja määrittää hexojen määrän kartan päällä. Tämän jälkeen siirrytään näkymään, jossa voi tehdä muutoksia ruudukkoon ja muistiinpanoja.
+Sovelluksen auetessa käyttäjälle aukeaa kartta, johon on piirtynyt kuusikulmioruudukko, joita voi klikata, joko vasemmalla, tai oikealla hiiren näppäimellä
 
 ## Toiminnallisuus
 
-### Alkunäkymä
-
-Sovelluksen auetessa ilmestyvässä ikkunassa on naviskat "uusi kartta" ja "vanha kartta". Valitessa vanhan voi ladata vanhan projektin, jota muokata ja tutkia. Uuden valitessa ladataan koneelta kuva,
-joka tulee kartan pohjaksi. Tämän jälkeen tulee ruutu, johon syötetään "hex gridin" korkeus ja leveys hexoissa ja sovellus luo ruudukon kuvan päälle.
 
 ### Muokkausnäkymä
 
-Täällä voi muokata projektia joko klikkaamalla hexaa(TEHTY), jolloin pääsee kirjoittamaan siitä hexasta muistiinpanoja, tai liikuttamalla hexaruudukkoa kuvan päällä (jos tarvetta saada hexat johonkin 
-tiettyihin kohtiin.
+Täällä voi muokata projektia joko klikkaamalla hexaa hiiren vasemmalla painikkeella, jolloin pääsee kirjoittamaan siitä hexasta muistiinpanoja, tai klikkaamalla hexaa hiiren oikealla näppäimellä, jolloin oikeaan yläreunaan aukeaa valikko josta voi valita siihen hexaan monstereiden statblokkeja, jotka klikatessa aukeavat ruudulle ja tallentuvat csv tiedostoon.
 
 ### Jatkokehitysideoita
 
-Jossain vaiheessa haluan mahdollisuuden vaihtaa hexakon alla olevan kartan uuteen, niin että hexojen tiedot säilyvät. Ties vaikka kartan maailmaa järisyttää jokin luononmullistus ja puolet kartasta
-uppoaa mereen.
+Jossain vaiheessa haluan mahdollisuuden vaihtaa hexakon alla olevan kartan uuteen, niin että hexojen tiedot säilyvät. Ties vaikka kartan maailmaa järisyttää jokin luononmullistus ja puolet kartasta uppoaa mereen.
