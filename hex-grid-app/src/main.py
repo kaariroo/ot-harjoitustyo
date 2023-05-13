@@ -3,7 +3,6 @@ import pygame
 from notes import Note
 from monster_notes import MonsterNote
 from statblock import Statblock
-from dropdown import DropDown
 
 
 
@@ -19,7 +18,11 @@ class MainLoop:
             clock: kello
             win: pelin ikkuna
             picture: peli-ikkunaan pohjalle tuleva kuva
-            event_queue: tapahtumajono"""
+            event_queue: tapahtumajono
+            renderer: näytön päivittäjä
+            aimedhex: hexa johon hiiri osoittaa
+            dropdown: valikko
+            """
 
         self.hexmap = hexmap
         self.clock = clock
@@ -32,12 +35,71 @@ class MainLoop:
         self.active = None
         self.clicked = None
 
+    def make_monster_note(self):
+
+        """Luo muistiinpanon monsterista ja laittaa monsteria vastaavan Statblock olion
+        hexan statblock grouppiin sekä asettaa sen oikeaan kohtaan näytölle"""
+
+        active_monster = self.dropdown.monsters[self.dropdown.active_option]
+        if len(self.active.statblocks.sprites()) == 0:
+            monster_note = MonsterNote(self.active, active_monster)
+            monster_note.write(self.hexmap.hexlist.index(self.active))
+            statblock = Statblock((0,0), active_monster)
+            self.active.statblocks.add(statblock)
+        elif self.active.statblocks.sprites()[-1].rect.right > 750:
+            if self.active.statblocks.sprites()[-1].rect.top == 0:
+                monster_note = MonsterNote(self.active, active_monster)
+                monster_note.write(self.hexmap.hexlist.index(self.active))
+                pos = self.active.statblocks.sprites()[0].rect.bottomleft
+                statblock = Statblock((pos), active_monster)
+                self.active.statblocks.add(statblock)
+        else:
+            monster_note = MonsterNote(self.active, active_monster)
+            monster_note.write(self.hexmap.hexlist.index(self.active))
+            pos = self.active.statblocks.sprites()[-1].rect.topright
+            statblock = Statblock((pos), active_monster)
+            self.active.statblocks.add(statblock)
+
+    def open_monster_statblocks(self):
+
+        """Kun hiiren oikealla näpätään hexaa, tämä lukee csv tiedostosta, mitä monsuja 
+        löytyy ja asettaa ne paikoilleen"""
+
+        self.clicked.active = True
+        self.active = self.clicked
+        self.clicked.width = 6
+        self.dropdown.draw_menu = True
+        dirname = os.path.dirname(__file__)
+        m_name = self.hexmap.hexlist.index(self.active)
+        monsternote_file_path = os.path.join(dirname, "monster_notes", f"{m_name}.csv")
+        if os.path.isfile( monsternote_file_path):
+            with open(monsternote_file_path) as document:
+                for text in document:
+                    monsters = text.split(";")
+                monsterlist = []
+                for monster in monsters:
+                    monsterlist.append(monster)
+                monsterlist.pop(-1)
+                singleslist = [*set(monsterlist)]
+                for monster in singleslist:
+                    if monster == singleslist[0]:
+                        statblock = Statblock((0,0), monster)
+                        self.active.statblocks.add(statblock)
+                    elif self.active.statblocks.sprites()[-1].rect.right > 750:
+                        pos = self.active.statblocks.sprites()[0].rect.bottomleft
+                        statblock = Statblock((pos), monster)
+                        self.active.statblocks.add(statblock)
+                    else:
+                        pos = self.active.statblocks.sprites()[-1].rect.topright
+                        statblock = Statblock((pos), monster)
+                        self.active.statblocks.add(statblock)
+
+
     def handle_events(self):
 
         """Käsittelee näppäimistöllä annettavat tapahtumat"""
         left = 1
         right = 3
-        
         for event in self.event_queue.get():
             if event.type == pygame.QUIT:
                 return False
@@ -45,34 +107,15 @@ class MainLoop:
                 if event.button == left and not self.dropdown.draw_menu:
                     self.clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
                     self.clicked.color = (250, 235, 215, 255)
-                    notes = Note(self.clicked)
-                    notes.write(self.hexmap.hexlist.index(self.clicked))
+                    self.notes = Note(self.clicked)
+                    self.notes.write(self.hexmap.hexlist.index(self.clicked))
                     self.clicked.width = 1
                     return True
             if event.type == pygame.MOUSEBUTTONUP:
                 if event.button == left and self.dropdown.draw_menu is True:
                     self.dropdown.update()
                     if self.dropdown.active_option is not None:
-                        active_monster = self.dropdown.monsters[self.dropdown.active_option]
-                    if self.dropdown.active_option is not None:
-                        if len(self.active.statblocks.sprites()) == 0:
-                            monster_note = MonsterNote(self.active, active_monster)
-                            monster_note.write(self.hexmap.hexlist.index(self.active))
-                            statblock = Statblock((0,0), active_monster)
-                            self.active.statblocks.add(statblock)
-                        elif self.active.statblocks.sprites()[-1].rect.right > 750:
-                            if self.active.statblocks.sprites()[-1].rect.top == 0:
-                                monster_note = MonsterNote(self.active, active_monster)
-                                monster_note.write(self.hexmap.hexlist.index(self.active))
-                                pos = self.active.statblocks.sprites()[0].rect.bottomleft
-                                statblock = Statblock((pos), active_monster)
-                                self.active.statblocks.add(statblock)
-                            else:
-                                monster_note = MonsterNote(self.active, active_monster)
-                                monster_note.write(self.hexmap.hexlist.index(self.active))
-                                pos = self.active.statblocks.sprites()[-1].rect.topright
-                                statblock = Statblock((pos), active_monster)
-                                self.active.statblocks.add(statblock)
+                        self.make_monster_note()
                     if self.dropdown.menu_active:
                         self.clicked.active = False
                         self.active = None
@@ -84,34 +127,7 @@ class MainLoop:
                 self.clicked = self.hexmap.find_hex(event.pos[0], event.pos[1])
                 self.clicked.color = (250, 235, 215, 255)
                 if not self.clicked.active:
-                    self.clicked.active = True
-                    self.active = self.clicked
-                    self.clicked.width = 6
-                    self.dropdown.draw_menu = True
-                    dirname = os.path.dirname(__file__)
-                    m_name = self.hexmap.hexlist.index(self.active)
-                    monsternote_file_path = os.path.join(dirname, "monster_notes", f"{m_name}.csv")
-                    if os.path.isfile( monsternote_file_path):
-                        with open(monsternote_file_path) as document:
-                            for text in document:
-                                monsters = text.split(";")
-                            monsterlist = []
-                            for monster in monsters:
-                                monsterlist.append(monster)
-                            monsterlist.pop(-1)
-                            singleslist = [*set(monsterlist)]
-                            for monster in singleslist:
-                                if monster == singleslist[0]:
-                                    statblock = Statblock((0,0), monster)
-                                    self.active.statblocks.add(statblock)
-                                elif self.active.statblocks.sprites()[-1].rect.right > 750:
-                                    pos = self.active.statblocks.sprites()[0].rect.bottomleft
-                                    statblock = Statblock((pos), monster)
-                                    self.active.statblocks.add(statblock)
-                                else:
-                                    pos = self.active.statblocks.sprites()[-1].rect.topright
-                                    statblock = Statblock((pos), monster)
-                                    self.active.statblocks.add(statblock)
+                    self.open_monster_statblocks()
                 elif self.clicked.active:
                     self.clicked.active = False
                     self.active = None

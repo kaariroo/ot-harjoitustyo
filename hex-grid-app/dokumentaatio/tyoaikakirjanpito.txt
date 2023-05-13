@@ -16,5 +16,6 @@
 09.5.	3h	Statblokkien vääntämistä
 11.5.	5h	Statblokkien vääntämistä kohdilleen ja kunkin hexan statblokkien tallennuksesta vataavan luokan tekemistä
 12.5.	4h	Testien vääntämistä ja sovelluksen yleistä siistimistä
+13.5.	4h	Testien vääntämistä ja dokumentaatiota
 
-Yht =   51h
+Yht =   55h

@@ -15,10 +15,9 @@ def main():
     dropdown = DropDown(
     (100, 80, 255),
     [(255, 255, 255), (255, 230, 255)],
-    1113, 0, 200, 30, 
-    "Monsters", ["wolf", "owlbear", "dryad", "goblin", "goblin_boss"])
+    1113, 0, 200, 30,
+    "Monsters", ["wolf", "owlbear", "dryad", "goblin", "goblin_boss", "bear"])
     renderer = Renderer(win, picture, hexmap.hexlist, dropdown)
-
     pygame.display.set_caption("hexmaptool")
 
     event_queue = EventQueue()

@@ -18,7 +18,6 @@ class Renderer:
         self._hexlist = hexlist
         self._picture = picture
         self._dropdown = dropdown
-    
 
     def render(self):
 

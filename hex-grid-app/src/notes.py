@@ -13,7 +13,8 @@ class Note:
         self.hexa = hexa
     def write(self, hex_number):
 
-        """Muistiinpanojen kirjoittamisesta vastaava metodi. Luo tarvittaessa tekstitiedoston ja avaa editorin"""
+        """Muistiinpanojen kirjoittamisesta vastaava metodi. Luo tarvittaessa 
+        tekstitiedoston ja avaa editorin"""
 
         dirname = os.path.dirname(__file__)
         notes_file_path = os.path.join(dirname, "hex_notes", f"{hex_number}.txt")

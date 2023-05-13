@@ -10,8 +10,6 @@ class DropDown():
         self.draw_menu = False
         self.menu_active = False
         self.active_option = None
-        
-
     def draw(self, surf):
         pygame.draw.rect(surf, self.heading_color, self.rect, 0)
         self.font = pygame.font.Font('freesansbold.ttf', 30)
