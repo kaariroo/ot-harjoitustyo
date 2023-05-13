@@ -30,3 +30,5 @@ Pylint tarkistus komennolla "poetry run invoke lint"
 [release](https://github.com/kaariroo/ot-harjoitustyo/releases)
 
 [käyttöohje](https://github.com/kaariroo/ot-harjoitustyo/blob/master/hex-grid-app/dokumentaatio/kaytto-ohje.md)
+
+Statblokkien kuvat ovat kuvakaappauksia dnd kirjasta "Monster Manual". Ohjelma ei ole julkiseen jakoon, vaan omaa käyttöä varten muistiinpanovälineenä ohjatessani dnd peliä.
